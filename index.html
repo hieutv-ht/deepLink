@@ -1,3 +1,28 @@
-<form action="applinks://app.r.develop-workhub.link">
-    <input type="submit" value="Go to Google" />
-</form>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>SAPUI5 Walkthrough</title>
+    <script id="sap-ui-bootstrap" src="/resources/sap-ui-core.js" data-sap-ui-theme="sap_bluecrystal"
+        data-sap-ui-modules="sap.m.library" data-sap-ui-compatVersion="edge" data-sap-ui-preload="async">
+        </script>
+    <script>
+        sap.ui.getCore().attachInit(function () {
+            new sap.m.Text({
+                text: "OpenUI5 is loaded successfully!"
+            }).placeAt("content");
+        });
+    </script>
+</head>
+
+<body class="sapUiBody" id="content">
+
+    <form action="applinks://app.r.develop-workhub.link">
+        <input type="submit" value="Go to Google" />
+    </form>
+
+</body>
+
+</html>
